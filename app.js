@@ -30,10 +30,16 @@ inquirer
     },
 
     {
+        type: 'input',
+        name:'screenshot',
+        message:'Enter file path of the screenshot'
+    },
+
+    {
         type: 'checkbox',
         name:'license',
         message: 'Please check any license that apply',
-        choices:['Apache','MIT','GNU','ISC']
+        choices:['Apache','Boost','BSD 3','GNU GPL v3','MIT','Mozilla','IBM']
     },
 
     {
