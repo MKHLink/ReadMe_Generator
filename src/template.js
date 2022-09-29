@@ -1,4 +1,5 @@
-
+const  generateREADME = () =>{
+    return `
         # Title
 
         #Table of Contents
@@ -14,4 +15,7 @@
         ## Tests
 
         ## Questions
-    
+    `;
+};
+console.log(generateREADME());
+module.exports = generateREADME;
