@@ -12,27 +12,11 @@ const licenseIcons = [
     {
         name: 'BSD 3',
         link:'[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
-    },
-    {
-        name: 'GNU GPL v3',
-        link:'[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
-    },
-    {
-        name: 'MIT',
-        link:'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-    },
-    {
-        name:'Mozilla',
-        link:'[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
-    },
-    {
-        name:'IBM',
-        link:'[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
-    },
+    }
 ];
 for(let i =0;i<=licenseArr.length;i++)
 {
-    if(licenseArr[i]==licenseIcons[i].name)
+    if(licenseArr[i]===licenseIcons[i].name)
     {
         tempArr.push(licenseIcons[i].link);
     }
