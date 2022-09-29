@@ -94,7 +94,7 @@ inquirer
         type: 'checkbox',
         name:'license',
         message: 'Please check any license that apply',
-        choices:['Apache','Boost','BSD 3']
+        choices:['Apache','Boost','BSD 3','GNU GPL v3','MIT','Mozilla','IBM']
     },
 
     {
