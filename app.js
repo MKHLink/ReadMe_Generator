@@ -1,12 +1,7 @@
-/*const fs = require('fs');
+const inquirer = require('inquirer');
+const fs = require('fs');
 const generateREADME = require('./src/template');
 
-fs.writeFile('./README.MD',generateREADME(),err =>{
-    if(err) throw new (err);
-    console.log("Read me file complete");
-});*/
-
-const inquirer = require('inquirer');
 
 inquirer
 .prompt([
@@ -48,6 +43,12 @@ inquirer
     },
 
     {
+        type:'input',
+        name:'contributors',
+        message:'Please provide the names of contributors'
+    },
+
+    {
         type: 'input',
         name:'username',
         message: 'Please provide the GitHub username'
@@ -60,4 +61,12 @@ inquirer
     }
 
 ])
-.then(answer=>console.log(answer));
+.then(answer=>{
+
+    const pageReadMe = generateREADME(answer);
+    fs.writeFile('./README.md',pageReadMe,err =>{
+        if(err) throw new (err);
+        console.log("Read me file complete");
+    });
+
+});
