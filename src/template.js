@@ -10,6 +10,8 @@ const  generateREADME = () =>{
 
         ## Usage
 
+        ## License
+
         ## Contribution
 
         ## Tests
