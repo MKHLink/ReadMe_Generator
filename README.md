@@ -28,7 +28,7 @@ Generate README files for any project
 ![alt text](./screenshot/image.png)
 
 ## License
-Apache,Boost,BSD 3,GNU GPL v3,MIT,Mozilla,IBM
+N/A
 
 ## Contribution
 Mohammad Komol Hasan
