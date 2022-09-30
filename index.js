@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
-const fs = require('fs');
 const generateREADME = require('./src/template');
+const {writeFile} = require('./utils/generate-file');
 
 
 inquirer
@@ -156,11 +156,10 @@ inquirer
 
 ])
 .then(answer=>{
-
-    const pageReadMe = generateREADME(answer);
-    fs.writeFile('./dst/README.md',pageReadMe,err =>{
-        if(err) throw new (err);
-        console.log("Read me file complete");
-    });
-
+    return generateREADME(answer); 
+})
+.then(pageReadme =>{
+    return writeFile(pageReadme);
+}).catch(err =>{
+    console.log(err);
 });
