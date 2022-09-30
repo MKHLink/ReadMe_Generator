@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const generateREADME = require('./src/template');
 const {writeFile} = require('./utils/generate-file');
 
-
+//This calls the inquirer and asks the user for their input and ends in a promise chain
 inquirer
 .prompt([
     {

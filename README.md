@@ -1,8 +1,5 @@
-
-
-
 # Title
-LL
+ReadMe Generator
 
 # Table of Contents
 [Description](#description)
@@ -20,27 +17,27 @@ LL
 [Questions](#questions)
 
 ## Description
-as
+This node.js app allows users to create README.md files from their command line
 
 ## Installation
-AS
+Clone the directoy and use 'npm i' to install all dependencies, and from the terminal use 'node index' to run program
 
 ## Usage
-AS
+Generate README files for any project
 
-![alt text](./as)
+![alt text](./screenshot/image.png)
 
 ## License
-
+Apache,Boost,BSD 3,GNU GPL v3,MIT,Mozilla,IBM
 
 ## Contribution
-as
+Mohammad Komol Hasan
 
 ## Tests
-
+N/A
 
 ## Questions
-GitHub: as
+GitHub: MKHLink
 
-Email: as
+Email: likhonhasankomol@gmail.com
     

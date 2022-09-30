@@ -1,3 +1,4 @@
+//function to generate the license icons
 const licenseIcons = licenseArr =>{
 var tempArr=[];
 const licenseIcons = [
@@ -48,7 +49,7 @@ return tempArr;
 
 
 
-
+//This generates the basic README.md file
 module.exports = fileData =>{
     console.log(fileData);
 
